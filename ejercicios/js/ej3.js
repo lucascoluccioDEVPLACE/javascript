@@ -6,7 +6,7 @@ function guardaDatos() {
   let celular = document.getElementById("celular").value; //agarro valor final del html
   arregloDatos.push(nombre+" "+apellido+" "+celular);
   cont++;
-  if (cont==3){
+  if (cont==10){
     document.getElementById("guardar").setAttribute("disabled", "disabled");
     muestraDatos();
     }
