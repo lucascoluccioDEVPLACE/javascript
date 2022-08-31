@@ -137,3 +137,78 @@ console.log(Array.isArray('33'));
 var ejemplo='holamundo';
 //from() crear un array
 resultNumero=Array.from(ejemplo);
+
+//para ejercicio 4: una forma de hacerlo
+var array=[];
+let data=["lucas","coluccio","2235351166","1994"];
+array.push(data);
+data=["Carlos","Jaimes","223654879","2001"];
+array.push(data);
+console.log(array); //muestra todo el arreglo
+console.log(array[1][3]); //muestra pos 1 del arreglo y la pos 3 (el anio de carlos)
+
+//Arrays asociativos, clave-valor
+var arrayAs=new Array();
+arrayAs["ejemplo"]="hola";
+
+//objetos
+var personas={
+    nombre:['juan','pedro'],
+    edad: 32,
+    genero:'masculino',
+    saludo:function(){
+        console.log('hola soy '+this.nombre[0])
+    }
+};
+console.log(personas.edad);
+personas.saludo();
+console.log(personas['edad']);
+personas.edad=40;
+personas={
+    nombres:{
+        nombre:'juan',
+        apellido:'perez',
+    },
+    edad:32,
+    genero:'masculino',
+};
+console.log(personas.nombres.nombre+" "+personas.nombres.apellido);
+
+personas=[{},{},{}];
+var nombre='juan';
+var apellido='perez';
+var edad=20;
+
+personas={
+    nombre,
+    apellido,
+    edad,
+};
+console.log(personas);
+
+console.log("JSON↓");
+var ojs='{"name":"juan","apellido":"perez"}';
+JSON.parse(ojs);
+ojs='["name":"juan","apellido":"perez"]';
+JSON.stringify(personas);
+//JSON: Java Script Object Notation
+console.log("----------");
+const person={
+    firstName:"Juan",
+    lastName:"Ramon",
+    language:"",
+    get lang(){
+        return this.language;
+    },
+    set lang(valor){
+        this.language=valor;
+    },
+    fullName:function(){
+        return (this.firstName+" "+this.lastName).toUpperCase();
+    }
+};
+console.log(person.fullName());
+person.language="er";
+console.log(person.lang);
+person.lang="es";
+console.log(person.lang);
