@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Clase 6</title>
+    <script src="js/ej6.js"></script>
+  </head>
+  <body>
+    <input type="text" placeholder="Nombre del perro" id="nombre"/><p></p>
+    <input type="text" placeholder="Edad del perro" id="edad"/><p></p>
+    <input type="text" placeholder="Color del perro" id="color"/><p></p>
+    <select name="Estado de Adopcion" id="estado">
+      <option value="En adopcion">En adopcion</option>
+      <option value="Proceso de Adopcion">Proceso de Adopcion</option>
+      <option value="Adoptado">Adoptado</option>
+    </select><p></p>
+    <input type="text" placeholder="Raza del perro" id="raza"/><p></p>
+    <button id="guardar" onclick="guardaDatos()">GUARDAR</button>
+    
+    <h3><span id="perros"></span></h3>
+    <button id="modificaEstado" type="button" disabled onclick="actualizaEstado()">Modifica Estado de adopcion de un perro</button>
+  </body>
+</html>
