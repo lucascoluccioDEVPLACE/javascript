@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Clase 8 - Ahorcado</title>
+    <script src="js/ej8.js"></script>
+    
+  </head>
+  <body>
+   <input type="text" value="Ingrese palabra"  id="inputPalabra"/>
+   <button id="guardarPalabra" onclick="guardaPalabra()">Guardar Palabra</button>
+   <h3>Cantidad de letras de la palabra: <span id="cantidadLetras"></span></h3>
+   <h3>Cantidad de letras faltantes: <span id="cantidadLetrasFaltantes"></span></h3>
+   <h3>Letras erroneas: <span id="letras"></span></h3>
+   <h3>Intentos: <span id="intentos"></span></h3>
+   <h2><span id="palabra"></span></h2>
+   <input 
+      class="letra"
+      type="text" 
+      value="Ingrese letra a verificar" 
+      id="letra"/>
+   <button id="verificar" onclick="verifica()">VERIFICAR LETRA</button>
+
+   <h3> <span id="msjError"></span></h3>
+   
+
+
+
+  </body>
+</html>
