@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>dom</title>
+    <script src="./main.js"></script>
+    <style>
+    .droptarget{
+      float: left;
+      width: 100px;
+      height: 50px;
+      margin: 5px;
+      padding: 5px;
+      border: 1px solid;
+    }
+    </style>
+  </head>
+  <body>
+   <input 
+   type="text" 
+   value="Ejemplo de copiar" 
+   id="copy" 
+   oncopy="copiar()" 
+   oncut="cortar()"
+   />
+
+   <input type="text" value="Ejemplo de copiar2" id="copy2" />
+
+   <p id="textCopy"></p>
+
+   <br/>
+   <div class="droptarget"
+   ondrop="drop(event)" 
+   id="drap" 
+   ondragover="allowDrop(event)"> 
+    <p draggable="true" id="ptexto" ondragstart="drapStart(event)">Ejemplo</p>
+   </div>
+
+   <div class="droptarget"
+    ondrop="drop(event)"
+    ondragover="allowDrop(event)">
+  </div>
+
+
+
+  </body>
+</html>
